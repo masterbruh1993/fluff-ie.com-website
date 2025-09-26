@@ -604,7 +604,7 @@ function showMainMenu() {
 function handleMenuAction(action) {
     switch(action) {
         case 'buy':
-            window.open('https://raydium.io/swap/', '_blank');
+            window.open('https://dexscreener.com/solana/cwtbnpwk8ixbqmo5e2d6pftve7bdbz1evzuceeppfcuh', '_blank');
             break;
         case 'telegram':
             window.open('https://t.me/ItsFluffie', '_blank');
