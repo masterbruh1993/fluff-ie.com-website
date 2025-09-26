@@ -104,7 +104,6 @@ PHASE 1: [BOOT SEQUENCE] ✅
 
 PHASE 2: [GROWTH.exe] ⏳
 - Viral meme campaigns (organic + shill squads)
-- Strategic stealth buys & volume loops
 - Partnership collabs with other Solana meme tribes
 - FLUFFIE NFT teaser drop
 
