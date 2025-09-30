@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>FLUFFIE - The Cutest Meme Coin on Solana</title>
+    <meta name="title" content="FLUFFIE - The Cutest Meme Coin on Solana">
+    <meta name="description" content="FLUFFIE is the fluffiest meme coin on Solana 🌙🐼. Join the revolution of cuteness + degen energy. Buy, stake, and raid with the Fluffie Army! 🚀">
+    <meta name="keywords" content="FLUFFIE, Solana Meme Coin, Solana Crypto, Meme Token, Pumpfun, Raydium, Solana Army">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fluff-ie.com/">
+    <meta property="og:title" content="FLUFFIE - The Cutest Meme Coin on Solana">
+    <meta property="og:description" content="FLUFFIE is the fluffiest meme coin on Solana 🌙🐼. Join the revolution of cuteness + degen energy. Buy, stake, and raid with the Fluffie Army! 🚀">
+    <meta property="og:image" content="https://fluff-ie.com/assets/fluffie-preview.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fluff-ie.com/">
+    <meta property="twitter:title" content="FLUFFIE - The Cutest Meme Coin on Solana">
+    <meta property="twitter:description" content="FLUFFIE is the fluffiest meme coin on Solana 🌙🐼. Join the revolution of cuteness + degen energy. Buy, stake, and raid with the Fluffie Army! 🚀">
+    <meta property="twitter:image" content="https://fluff-ie.com/assets/fluffie-preview.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Metrics Display -->
+    <div id="metrics-display">
+        <div class="metric">
+            <div class="metric-value" id="holders-count">18,420</div>
+            <div class="metric-label">ACTIVE HOLDERS</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value" id="market-cap">2.8M</div>
+            <div class="metric-label">MARKET CAP ($)</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value" id="trust-score">98</div>
+            <div class="metric-label">TRUST SCORE</div>
+        </div>
+    </div>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
+            <div class="terminal-title">FLUFFIE OS v2.0.1 - Terminal</div>
+        </div>
+        <div class="terminal-body">
+            <!-- Boot sequence section -->
+            <div id="boot-sequence" class="boot-text" style="display: none;">
+                <!-- Boot sequence will be populated by JavaScript -->
+            </div>
+            
+            <!-- Main interface section -->
+            <div id="main-interface" class="main-interface" style="display: none;">
+                <div class="fluffie-logo">
+                    <img src="FLUFFIE TECHY HACKER.png" alt="FLUFFIE Logo" class="logo-image">
+                    <pre class="ascii-art">
+███████╗██╗     ██╗   ██╗███████╗███████╗██╗███████╗
+██╔════╝██║     ██║   ██║██╔════╝██╔════╝██║██╔════╝
+█████╗  ██║     ██║   ██║█████╗  █████╗  ██║█████╗  
+██╔══╝  ██║     ██║   ██║██╔══╝  ██╔══╝  ██║██╔══╝  
+██║     ███████╗╚██████╔╝██║     ██║     ██║███████╗
+╚═╝     ╚══════╝ ╚═════╝ ╚═╝     ╚═╝     ╚═╝╚══════╝
+                    </pre>
+                    <p class="tagline">~ The Cutest Meme Coin in Blockchain ~</p>
+                </div>
+                
+                <!-- Terminal Output with DexScreener + Trades -->
+                <div id="terminal-output" style="margin-top:15px; max-width:100%; margin-left:auto; margin-right:auto;">
+                    
+                    <!-- DexScreener inside terminal look -->
+                    <div style="border:1px solid #00ff66; background:#000; box-shadow:0 0 8px #00ff66; padding:6px; margin-bottom:10px;">
+                        <iframe 
+                            src="https://dexscreener.com/solana/cwtbnpwk8ixbqmo5e2d6pftve7bdbz1evzuceeppfcuh" 
+                            width="100%" 
+                            height="400" 
+                            style="border:none;"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-pointer-lock"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Buy + CA -->
+                    <div style="text-align:center; margin-top:6px;">
+                        <button id="flashy-buy-btn" onclick="window.open('https://dexscreener.com/solana/cwtbnpwk8ixbqmo5e2d6pftve7bdbz1evzuceeppfcuh', '_blank')" 
+                            style="padding:12px 24px; background:#003300; border:none; color:#00ff00; font-weight:bold; font-family:monospace; cursor:pointer; font-size:16px; border-radius:8px; box-shadow:0 0 20px #00ff00; transition:all 0.3s ease; animation:flashyGlow 2s infinite alternate;">
+                            🚀 BUY $FLUFFIE 🚀
+                        </button>
+                        <p style="margin-top:6px; color:#00ffcc; font-family:monospace; font-size:13px;">
+                            Contract: <span id="ca">YOUR_MINT_ADDRESS</span>
+                            <button onclick="navigator.clipboard.writeText(document.getElementById('ca').textContent)" 
+                                style="padding:1px 5px; font-size:11px; background:#111; color:#00ff66; border:1px solid #00ff66; cursor:pointer;">
+                                📋 Copy
+                            </button>
+                        </p>
+                    </div>
+                    
+                    <!-- Live Trades -->
+                    <h3 style="color:#00ff66; margin-top:8px; font-family:monospace; text-align:left; font-size:15px;">💹 LIVE TRADES</h3>
+                    <div id="live-trades" style="background:#000; border:1px solid #00ff66; padding:6px; font-family:monospace; color:#00ffcc; font-size:13px; height:65px; overflow:hidden;">
+                        <!-- trade lines here -->
+                    </div>
+                    
+                </div>
+                
+                <div class="menu-section">
+                    <div class="menu-buttons">
+                        <button class="buy-fluffie-btn" data-action="buy">Buy $FLUFFIE</button>
+                        <button class="menu-btn" data-action="telegram">Telegram</button>
+                        <button class="menu-btn" data-action="twitter">X / Twitter</button>
+                    </div>
+                    
+                    <div class="menu-options">
+                        <div class="menu-item" data-key="1">
+                            <span class="key">[1]</span>
+                            <span class="label">ABOUT FLUFFIE</span>
+                        </div>
+                        <div class="menu-item" data-key="2">
+                            <span class="key">[2]</span>
+                            <span class="label">TOKENOMICS</span>
+                        </div>
+                        <div class="menu-item" data-key="3">
+                            <span class="key">[3]</span>
+                            <span class="label">ROADMAP</span>
+                        </div>
+                        <div class="menu-item" data-key="4">
+                            <span class="key">[4]</span>
+                            <span class="label">BUY $FLUFFIE</span>
+                        </div>
+                        <div class="menu-item" data-key="5">
+                            <span class="key">[5]</span>
+                            <span class="label">CONTRACT INFO</span>
+                        </div>
+                        <div class="menu-item" data-key="6">
+                            <span class="key">[6]</span>
+                            <span class="label">MINI GAMES</span>
+                        </div>
+                    </div>
+                    
+                    <div class="command-line">
+                        <span class="prompt">fluffie@moon:~$</span>
+                        <span class="command-text">fluffie@terminal:~$ </span>
+                        <span class="command-input">Type a command or use arrow keys</span>
+                        <div id="cursor" class="cursor">█</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content sections -->
+            <div id="content-section" class="content-section" style="display: none;">
+                <div id="content-display"></div>
+                <div class="back-option">
+                    <span class="key">[ESC]</span> Back to Main Menu
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
