@@ -104,6 +104,7 @@ PHASE 1: [BOOT SEQUENCE] ✅
 
 PHASE 2: [GROWTH.exe] ⏳
 - Viral meme campaigns (organic + shill squads)
+- Strategic stealth buys & volume loops
 - Partnership collabs with other Solana meme tribes
 - FLUFFIE NFT teaser drop
 
@@ -603,13 +604,13 @@ function showMainMenu() {
 function handleMenuAction(action) {
     switch(action) {
         case 'buy':
-            window.open('https://dexscreener.com/solana/cwtbnpwk8ixbqmo5e2d6pftve7bdbz1evzuceeppfcuh', '_blank');
+            window.open('https://raydium.io/swap/', '_blank');
             break;
         case 'telegram':
-            window.open('https://t.me/ItsFluffie', '_blank');
+            window.open('https://t.me/FluffieToken', '_blank');
             break;
         case 'twitter':
-            window.open('https://x.com/i/communities/1964319144347885886', '_blank');
+            window.open('https://x.com/i/communities/1973332429848060028', '_blank');
             break;
     }
 }
